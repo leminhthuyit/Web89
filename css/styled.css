@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #23262F;
+    font-family: sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 200px;
+    background: #D5DBDB;
+}
+
+.slider {
+    width: 100%;
+    height: 300px;
+    background: #FCF3CF;
+}
+
+.introduction {
+    height: 800px;
+    background: rgba(187, 31, 31, 0.1);
+    padding: 50px 120px;
+}
+
+.introduction .box-1 {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 16px;
+    padding: 70px;
+}
+
+
+.introduction a {
+    color: #23262F;
+    text-decoration: none;
+}
+
+.introduction .box-1 a h2 {
+    width: 65%;
+    margin-bottom: 40px;
+}
+
+.introduction .box-1 div.box_content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.introduction p {
+    color: #23262F;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+
+.introduction .box-2 {
+    width: 50%;
+    height: 100%;
+    padding-left: 40px;
+    align-content: space-between;
+}
+
+
+.introduction .box-2_1 {
+    width: 100%;
+    height: 30%;
+    background: #fff;
+    border-radius: 16px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.introduction .box-2_1 a h4 {
+    margin-bottom: 10px;
+}
+
+.introduction .box-2_1 button {
+    height: 44px;
+    width: 64px;
+    border-radius: 50%;
+    border: 0.5px solid #F2F3F4;
+    background: #fff;
+    margin-left: 40px;
+}
+
+.introduction .box-2_1 button:hover {
+    background: #E5E7E9;
+    transition: 1s;
+}
+
+.introduction .box-2_1 button i {
+    color: #BB1F1F;
+}
+
+/* ======= */
+.solution {
+    width: 100%;
+    min-height: 500px;
+    padding: 40px 200px;
+}
+
+.solution .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solution .title h2 {
+    width: 28%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.solution .title p {
+    width: 62%;
+    color: #23262F;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.solution .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.solution .options .icon_box {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(237, 49, 38, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.solution .options h4 {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.solution .options p {
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.solution .options button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BB1F1F;
+    transition: 1s;
+}
+
+.solution .options button:hover {
+    background: #943126;
+}
+
+.solution .options button .icon {
+    padding-left: 8px;
+}
+
+
+#footer {
+    width: 100%;
+    height: 300px;
+    background: #E8DAEF;
+}
