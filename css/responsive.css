@@ -1,0 +1,277 @@
+@media only screen and (max-width:1440px) {
+    #nav_menu .menu ul li {
+        margin: 0 12px;
+    }
+
+    .introduction .box-1 a h2 {
+        width: auto;
+    }
+
+    .tools {
+        padding: 60px 80px;
+    }
+
+    .newspapers_slide .conten_slide {
+        padding: 60px 90px;
+    }
+
+    .newspapers_slide .conten_slide .content_newspapers .text_container p {
+        width: 50rem;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #nav_blog {
+        height: 32px;
+        padding-right: 3rem;
+    }
+
+    #nav_menu {
+        height: 76px;
+        padding: 0 30px;
+    }
+
+    #nav_menu .menu ul li {
+        margin: 0 8px;
+    }
+
+    #nav_menu .button_menu {
+        margin-left: 12px;
+    }
+
+    #nav_menu .button_menu p.search_menu button {
+        font-size: 18px;
+    }
+
+    #nav_menu .button_menu a button {
+        width: auto;
+        padding: 8px 18px;
+    }
+
+    #nav_menu .button_menu a button span.text {
+        display: none;
+    }
+
+    #nav_menu .button_menu a button.button_white {
+        border: none;
+    }
+
+    .introduction {
+        padding: 42px;
+    }
+
+    .introduction .box-1 {
+        padding: 100px 36px;
+    }
+
+    .introduction .box-1 a h2 {
+        width: 22rem;
+    }
+
+    .introduction .box-1 div.box_content img {
+        width: 22rem;
+    }
+
+    .solution {
+        padding: 40px 40px;
+    }
+
+    .solution .options {
+        padding: 16px;
+    }
+
+    .caused {
+        padding: 46px 40px;
+    }
+
+    .caused div.info_caused {
+        padding: 40px 12px;
+    }
+
+    .statistics {
+        padding: 30px 20px;
+    }
+
+    .tools {
+        padding: 40px 20px;
+    }
+
+    .tools .title_tools {
+        padding: 40px 8px 40px 0;
+    }
+
+    .tools .title_tools h2,
+    .tools .title_tools p {
+        width: 12rem;
+    }
+
+    .tools .box_tools {
+        padding: 14px 12px 50px 12px;
+    }
+
+    .tools .update_box_tools {
+        padding: 14px 12px 22px 12px;
+    }
+
+    .newspapers_slide,
+    .newspapers_slide .carousel-cell {
+        min-height: 150px;
+    }
+
+    .newspapers_slide .conten_slide {
+        padding: 30px;
+    }
+
+    .newspapers_slide .conten_slide .content_newspapers .text_container p {
+        width: 30rem;
+        font-size: 18px;
+    }
+
+    .consultation .content_consultation {
+        padding: 40px 24px;
+    }
+
+    .consultation .title p {
+        width: 32rem;
+    }
+
+    .blog .news_blog {
+        padding: 20px 12px 20px 20px;
+    }
+
+    .blog .news_blog .news_blog_child_pading {
+        padding-top: 90px;
+    }
+
+    .blog .form-news {
+        height: 40rem;
+        padding: 20px 12px;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    #nav_menu {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    #nav_menu {
+        padding: 0 12px;
+    }
+
+    #nav_menu .button_menu {
+        margin: 0;
+    }
+
+    #nav_menu .button_menu a,
+    #nav_menu .button_menu p.search_menu {
+        padding: 0 4px;
+    }
+
+    #nav_menu .button_menu a button {
+        width: auto;
+    }
+
+    #nav_menu .button_menu a button span.text {
+        display: none;
+    }
+
+    #nav_menu .button_menu p.search_menu button {
+        font-size: 20px;
+    }
+
+    #nav_menu .button_menu a button.button_white {
+        border: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #header {
+        min-height: 50px;
+    }
+
+    #nav_blog {
+        padding: 0;
+    }
+
+    #nav_blog .nav_title ul li a {
+        font-size: 12px;
+    }
+
+    #nav_blog .nav_icon ul li i {
+        font-size: 16px;
+    }
+
+    #nav_blog .nav_icon ul li {
+        padding: 4px;
+    }
+
+    #nav_blog .nav_icon ul li .icon_envelope {
+        font-size: 12px;
+    }
+
+    #nav_menu {
+        height: 60px;
+        padding: 0 12px;
+    }
+
+    #nav_menu ul li span {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #nav_menu .button_menu {
+        margin-left: 8px;
+    }
+
+    #nav_menu .button_menu a button.button_red {
+        display: none;
+    }
+
+    #nav_menu .button_menu p.search_menu button {
+        font-size: 16px;
+    }
+
+    #nav_menu .button_menu a button {
+        padding: 0;
+    }
+
+    .introduction .box-1 {
+        padding: 50px 36px;
+    }
+
+    .solution .title p {
+        width: 44rem;
+    }
+
+    .caused {
+        padding: 28px;
+    }
+
+    .caused .title_caused h2 {
+        width: 32rem;
+    }
+
+    .caused .title_caused p {
+        width: 42rem;
+    }
+
+    .caused .info_caused_padding {
+        padding: 0 6px;
+    }
+
+    .caused div.info_caused h4 {
+        text-align: center;
+    }
+
+    .caused div.info_caused h4 .h4_caused {}
+}
+
+@media only screen and (max-width:600px) {}
+
+@media only screen and (max-width:375px) {}
+
+@media only screen and (max-width:414px) {}
+
+@media only screen and (max-width:320px) {}

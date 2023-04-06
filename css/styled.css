@@ -68,6 +68,11 @@ a {
     letter-spacing: 0.25px;
 }
 
+#nav_blog .nav_title ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
 #nav_blog .nav_title ul li a .icon {
     font-size: 1.5em;
     padding-right: 8px;
@@ -103,12 +108,9 @@ a {
     color: #1DA1F2;
 }
 
-#nav_blog .nav_icon ul li .bg_envelope {
-    display: inline-block;
+#nav_blog .nav_icon ul li img.bg_envelope {
     width: 24px;
     height: 24px;
-    background: #000;
-    border-radius: 50%;
     text-align: center;
 }
 
@@ -129,8 +131,8 @@ a {
     flex-wrap: nowrap;
     align-items: center;
     background: #fff;
-    padding: 0 168px;
-    justify-content: center;
+    padding: 0 100px;
+    justify-content: space-between;
 }
 
 #nav_menu ul {
@@ -143,7 +145,7 @@ a {
 
 #nav_menu ul li {
     list-style-type: none;
-    padding: 0 34px;
+    margin: 0 20px;
 }
 
 #nav_menu ul li a {
@@ -541,10 +543,18 @@ a {
 }
 
 .tools .update_box_tools {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #BB1F1F;
     padding: 60px 42px 139px 42px;
 }
 
-.tools .box_tools h4 {
+.tools .box_tools h4,
+.tools .update_box_tools h4 {
     color: #ffff;
     width: 12rem;
     font-weight: 700;
@@ -552,11 +562,13 @@ a {
     margin: 30px 0 20px 0;
 }
 
-.tools .box_tools h4.width_title {
+.tools .box_tools h4.width_title,
+.tools .update_box_tools h4.width_title {
     width: 14rem;
 }
 
-.tools .box_tools p {
+.tools .box_tools p,
+.tools .update_box_tools p {
     color: #ffff;
     font-weight: 400;
     text-align: center;
