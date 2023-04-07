@@ -142,19 +142,353 @@
     width: 100%;
     min-height: 500px;
   }
+
+  .consultation {
+    height: 380px;
+  }
+
+  .consultation .content_consultation {
+    padding: 12px;
+  }
+
+  .consultation .group_image div.image1 {
+    display: none;
+  }
+
+  .consultation .group_image div.image2 {
+    width: 100%;
+  }
+
+  .consultation .group_image .image_consultation {
+    background-size: cover;
+  }
+
+  .consultation .title p {
+    width: 16rem;
+  }
+
+  .blog .news_blog {
+    padding: 12px;
+  }
+
+  .blog .form-news {
+    height: 15rem;
+    padding: 2px;
+    background-size: contain;
+  }
+
+  .blog .form-news p.form_submit span {
+    padding: 4px 8px;
+  }
+
+  .blog p.form_submit button {
+    padding: 4px;
+    margin-left: 8px;
+  }
+
+  .blog p.form_submit button i {
+    font-size: 16px;
+  }
+
+  .blog p.form_submit span input {
+    height: 32px;
+    width: 190px;
+    margin-left: 8px;
+  }
+
+  .partners {
+    padding: 8px;
+  }
+
+  .partners .image_group img {
+    height: 4rem;
+    width: 7rem;
+  }
 }
 
 @media only screen and (min-width: 375px) {
 }
+
 @media only screen and (min-width: 414px) {
 }
+
 @media only screen and (min-width: 576px) {
+  #header_mobile {
+    padding: 8px 24px;
+  }
+
+  .introduction {
+    padding: 18px 0;
+  }
+
+  .introduction .box-1 {
+    padding: 24px;
+  }
+
+  .introduction .box-1 .box_content img {
+    width: 300px;
+    height: 210px;
+  }
+
+  .introduction .box-1 a h2 {
+    width: 18rem;
+  }
+
+  .solution .title h2 {
+    width: 20rem;
+  }
+
+  .solution .title p {
+    width: 25rem;
+  }
+
+  .solution .options {
+    padding: 20px 70px;
+  }
+
+  .caused {
+    padding: 12px 36px;
+  }
+
+  .caused .title_caused h2,
+  .caused .title_caused p {
+    width: 24rem;
+  }
+
+  .caused div.info_caused {
+    padding: 20px;
+  }
+
+  .tools {
+    padding: 12px 20px;
+  }
+
+  .tools .title_tools h2 {
+    width: 26rem;
+  }
+
+  .tools .title_tools p {
+    width: 24rem;
+  }
+
+  .tools .box_tools {
+    padding: 18px;
+  }
+
+  .newspapers_slide,
+  .newspapers_slide .carousel-cell {
+    width: 100%;
+    min-height: 430px;
+  }
+
+  .consultation .title h2 {
+    text-align: left;
+  }
+
+  .consultation .title p {
+    width: 30rem;
+  }
+
+  .consultation .content_consultation .button_group a,
+  .consultation .content_consultation .button_group a button {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .blog p.form_submit span input {
+    width: 26px;
+  }
 }
+
 @media only screen and (min-width: 768px) {
+  .introduction .box-1 {
+    padding: 60px 28px;
+  }
+
+  .introduction .box-1 a h2 {
+    width: 20rem;
+  }
+
+  .introduction .box-1 .box_content img {
+    width: 350px;
+    height: 240px;
+  }
+
+  .solution .options {
+    padding: 20px 40px;
+  }
+
+  .caused {
+    padding: 24px 60px;
+  }
+
+  .caused .title_caused p {
+    width: 26rem;
+  }
+
+  .caused div.info_caused {
+    padding: 20px 36px;
+  }
+
+  .tools {
+    padding: 26px 60px;
+  }
+
+  .tools .title_tools h2 {
+    width: 28rem;
+  }
+
+  .tools .title_tools p {
+    width: 36rem;
+  }
+
+  .blog p.form_submit span,
+  .blog p.form_submit span input {
+    width: 100%;
+  }
+
+  .blog .form-news {
+    padding: 50px;
+  }
 }
+
 @media only screen and (min-width: 992px) {
+  .introduction .box-2_1 {
+    padding: 14px;
+  }
+
+  .solution .title h2 {
+    width: 24rem;
+  }
+
+  .solution .title p {
+    width: 36rem;
+  }
+
+  .solution .options {
+    padding: 20px 20px;
+  }
+
+  .caused {
+    padding: 24px 20px;
+  }
+
+  .caused .title_caused h2 {
+    width: 28rem;
+  }
+
+  .caused .title_caused p {
+    width: 38rem;
+  }
+
+  .caused div.info_caused {
+    padding: 20px 20px;
+  }
+
+  .tools {
+    padding: 26px 26px;
+  }
+
+  .tools .box_tools h4.width_title {
+    width: 16rem;
+  }
+
+  .tools .title_tools h2 {
+    width: 30rem;
+  }
+
+  .tools .title_tools p {
+    width: 39rem;
+  }
+
+  .newspapers_slide .conten_slide {
+    padding: 36px;
+  }
+
+  .consultation .content_consultation {
+    padding: 100px;
+  }
+
+  .consultation .title p {
+    width: 44rem;
+  }
+
+  .partners {
+    min-height: 170px;
+  }
 }
+
 @media only screen and (min-width: 1200px) {
+  #header {
+    display: block;
+  }
+
+  #header_mobile {
+    display: none;
+  }
+
+  #nav_blog {
+    height: 32px;
+    padding-right: 4em;
+  }
+
+  #nav_menu {
+    padding: 0 20px;
+  }
+
+  #nav_menu ul li {
+    margin: 0 8px;
+  }
+
+  #nav_menu .button_menu {
+    margin-left: 8px;
+  }
+
+  #nav_menu .button_menu a button {
+    width: 10rem;
+    padding: 8px;
+  }
+
+  .tools {
+    padding: 12px;
+    min-height: 420px;
+  }
+
+  .tools .title_tools h2 {
+    width: 16rem;
+  }
+
+  .tools .title_tools p {
+    width: 16rem;
+  }
+
+  .newspapers_slide,
+  .newspapers_slide .carousel-cell {
+    width: 100%;
+    height: 290px;
+  }
+  .consultation .content_consultation .button_group {
+    line-height: 8rem;
+  }
+
+  .consultation .group_image div.image1 {
+    display: block;
+    width: 40%;
+  }
+
+  .consultation .group_image div.image2 {
+    width: 60%;
+  }
+
+  .consultation .content_consultation {
+    padding: 24px;
+  }
+
+  .partners .image_group img {
+    height: 4rem;
+    width: 10rem;
+  }
 }
+
 @media only screen and (min-width: 1440px) {
 }
