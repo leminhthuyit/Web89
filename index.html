@@ -1,726 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB89</title>
+    <!-- flickity -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="css/styled.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEB89</title>
-  <!-- flickity -->
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="css/styled.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  <!-- bootstrap-icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-</head>
-
-<body>
-  <div id="main">
-    <div id="header">
-      <div id="nav_blog">
-        <div class="nav_title">
-          <ul>
-            <li>
-              <a href="#">
-                <span class="icon">
-                  <i class="bi bi-info-circle-fill"></i>
-                </span>
-                <span class="text">Về chúng tôi</span>
-              </a>
-              <b></b>
-            </li>
-
-            <li>
-              <a href="#">
-                <span class="icon">
-                  <i class="bi bi-newspaper"></i>
-                </span>
-                <span class="text">Blog</span>
-              </a>
-              <b></b>
-            </li>
-
-            <li>
-              <a href="#">
-                <span class="icon">
-                  <i class="bi bi-credit-card-2-back-fill"></i>
-                </span>
-                <span class="text">Thanh toán</span>
-              </a>
-              <b></b>
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav_icon">
-          <ul>
-            <li>
-              <a href="#">
-                <span class="icon_2">
-                  <i class="bi bi-facebook icon_facebook"></i>
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span class="icon_2">
-                  <i class="bi bi-twitter icon_twitter"></i>
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span class="icon_2">
-                  <img id="icon_envelope" src="assets/svg/Component 1.svg" alt="#">
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <span class="icon_2">
-                  <i class="bi bi-telegram icon_telegram"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div id="nav_menu">
-        <p>
-          <a href="#">
-            <img src="assets/svg/logoweb 1.svg" alt="#">
-          </a>
-        </p>
-        <div class="menu">
-          <ul>
-            <li>
-              <a href=""><span>Trang chủ</span></a>
-            </li>
-            <li>
-              <a href=""><span>Dịch vụ</span></a>
-            </li>
-            <li>
-              <a href=""><span>Tin tức</span></a>
-            </li>
-            <li>
-              <a href=""><span> Tuyển dụng</span></a>
-            </li>
-            <li>
-              <a href=""><span>Hỗ trợ</span></a>
-            </li>
-            <li>
-              <a href=""><span>Liên hệ</span></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="button_menu">
-          <p class="search_menu">
-            <button type="button">
-              <i class="bi bi-search"></i>
-            </button>
-          </p>
-          <a href="#">
-            <button type="button" class="btn btn-light button_white">
-              <span>
-                <img src="assets/svg/call.svg" alt="#">
-              </span>
-              <span class="text">1900 815 658</span>
-            </button>
-          </a>
-          <a href="#">
-            <button type="button" class="btn btn-primary button_red">
-              <span>
-                <img src="assets/svg/Vector.svg" alt="#">
-              </span>
-              <span class="text">Kho giao diện</span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div id="content">
-      <div class="slider">
-        <div class="carousel" data-flickity='{ "autoPlay": true }'>
-          <div class="carousel-cell" style="background-image: url('assets/svg/imageSlide.png');"></div>
-          <div class="carousel-cell" style="background-image: url('assets/svg/imageSlide.png');"></div>
-          <div class="carousel-cell" style="background-image: url('assets/svg/imageSlide.png');"></div>
-          <div class="carousel-cell" style="background-image: url('assets/svg/imageSlide.png');"></div>
-        </div>
-      </div>
-
-      <div class="introduction">
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-12 col-md-12 col-lg-6" style="padding-right: 19px;">
-              <div class="box-1">
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="nav_blog">
+          <div class="nav_title">
+            <ul>
+              <li>
                 <a href="#">
-                  <h2>Bắt đầu Kinh doanh Online
-                    ngay hôm nay!</h2>
+                  <span class="icon">
+                    <i class="bi bi-info-circle-fill"></i>
+                  </span>
+                  <span class="text">Về chúng tôi</span>
                 </a>
-                <div class="box_content">
-                  <p>
-                    Bạn muốn sở hữu 1 website để bắt đầu công việc kinh doanh online của mình nhưng không biết bắt đầu
-                    từ
-                    đâu?Hãy liên hệ ngay với HOSTVN, bạn sẽ được tư vấn miễn phí các bước để tạo 1 website đơn giản và
-                    tiết
-                    kiệm
-                    chi phí!
-                  </p>
-                  <img src="assets/svg/introduction_1.svg" alt="logo">
-                </div>
-              </div>
-            </div>
+                <b></b>
+              </li>
 
-            <div class="col-12 col-md-12 col-lg-6" style="padding-left: 19px;">
-              <div class="box-2">
-                <div class="box-2_1">
-                  <div class="box_text">
-                    <a href="#">
-                      <h4>Giải pháp website chuyên nghiệp</h4>
-                    </a>
-                    <p>
-                      Cung cấp đăng ký dịch vụ tên miền quốc tế, tên miền quốc gia, hosting website đặt tại việt nam,
-                      đặt
-                      tại
-                      nước ngoài…
-                    </p>
-                  </div>
-                  <a href="#">
-                    <button type="button">
-                      <div class="icon">
-                        <i class="bi bi-arrow-right"></i>
-                      </div>
-                    </button>
-                  </a>
-                </div>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="bi bi-newspaper"></i>
+                  </span>
+                  <span class="text">Blog</span>
+                </a>
+                <b></b>
+              </li>
 
-                <div class="box-2_1">
-                  <div class="box_text">
-                    <a href="#">
-                      <h4>Giải pháp Marketing tổng thể</h4>
-                    </a>
-                    <p>
-                      Giải pháp thiết kế website bán hàng chuyên nghiệp. Web chuẩn SEO, tương thích nhiều thiết bị, bảo
-                      mật
-                      tốt,
-                      tốc độ nhanh.
-                    </p>
-                  </div>
-                  <a href="#">
-                    <button type="button">
-                      <div class="icon">
-                        <i class="bi bi-arrow-right"></i>
-                      </div>
-                    </button>
-                  </a>
-                </div>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="bi bi-credit-card-2-back-fill"></i>
+                  </span>
+                  <span class="text">Thanh toán</span>
+                </a>
+                <b></b>
+              </li>
+            </ul>
+          </div>
 
-                <div class="box-2_1">
-                  <div class="box_text">
-                    <a href="#">
-                      <h4>Giải pháp nhận diện thương hiệu</h4>
-                    </a>
-                    <p>
-                      Giải pháp Digital Maketing tổng thể gồm các chiến dịch Google, Facebook, SEO … Đưa sản phẩm của
-                      bạn
-                      tiếp
-                      cận với hàng triệu ...
-                    </p>
-                  </div>
-                  <a href="#">
-                    <button type="button">
-                      <div class="icon">
-                        <i class="bi bi-arrow-right"></i>
-                      </div>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="nav_icon">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="icon_2">
+                    <i class="bi bi-facebook icon_facebook"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span class="icon_2">
+                    <i class="bi bi-twitter icon_twitter"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span class="icon_2">
+                    <img
+                      id="icon_envelope"
+                      src="assets/svg/Component 1.svg"
+                      alt="#"
+                    />
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span class="icon_2">
+                    <i class="bi bi-telegram icon_telegram"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="solution">
-        <div class="title">
-          <h2>Hệ sinh thái các giải pháp
-            đến từ chúng tôi</h2>
+        <div id="nav_menu">
           <p>
-            Chuyển đổi số mang đến những lợi ích cho mọi hoạt động trong doanh nghiệp, từ quản lý, điều hành đến kinh
-            doanh, nghiên cứu và phát triển.
-          </p>
-        </div>
-
-        <div class="row solution_option">
-          <div class="col-12 col-md-6 col-lg-4 options">
-            <div class="icon_box">
-              <img src="assets/svg/domain.svg" alt="#">
-            </div>
-            <h4>Đăng ký tên miền</h4>
-            <p>Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi tạo sau khi thanh toán.</p>
-            <a href="" style="text-decoration: none;">
-              <button type="button" class="btn btn-danger">
-                <span class="text">Tìm hiểu ngay</span>
-                <span class="icon">
-                  <i class="bi bi-arrow-right"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 options">
-            <div class="icon_box">
-              <img src="assets/svg/hotsting.svg" alt="#">
-            </div>
-            <h4>Hosting-Cloud Server</h4>
-            <p>Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi tạo sau khi thanh toán.</p>
-            <a href="" style="text-decoration: none;">
-              <button type="button" class="btn btn-danger">
-                <span class="text">Tìm hiểu ngay</span>
-                <span class="icon">
-                  <i class="bi bi-arrow-right"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 options">
-            <div class="icon_box">
-              <img src="assets/svg/Email doanh nghiep.svg" alt="#">
-            </div>
-            <h4>Email Doanh nghiệp</h4>
-            <p>Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi tạo sau khi thanh toán.</p>
-            <a href="" style="text-decoration: none;">
-              <button type="button" class="btn btn-danger">
-                <span class="text">Tìm hiểu ngay</span>
-                <span class="icon">
-                  <i class="bi bi-arrow-right"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 options">
-            <div class="icon_box">
-              <img src="assets/svg/app mobile.svg" alt="#">
-            </div>
-            <h4>App Mobile</h4>
-            <p>Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi tạo sau khi thanh toán.</p>
-            <a href="" style="text-decoration: none;">
-              <button type="button" class="btn btn-danger">
-                <span class="text">Tìm hiểu ngay</span>
-                <span class="icon">
-                  <i class="bi bi-arrow-right"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 options">
-            <div class="icon_box">
-              <img src="assets/svg/Dao tao mtk.svg" alt="#">
-            </div>
-            <h4>Đào tạo marketing online</h4>
-            <p>Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi tạo sau khi thanh toán.</p>
-            <a href="" style="text-decoration: none;">
-              <button type="button" class="btn btn-danger">
-                <span class="text">Tìm hiểu ngay</span>
-                <span class="icon">
-                  <i class="bi bi-arrow-right"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 options">
-            <div class="icon_box">
-              <img src="assets/svg/nhan su.svg" alt="#">
-            </div>
-            <h4>Cung ứng nhân sự</h4>
-            <p>Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi tạo sau khi thanh toán.</p>
-            <a href="" style="text-decoration: none;">
-              <button type="button" class="btn btn-danger">
-                <span class="text">Tìm hiểu ngay</span>
-                <span class="icon">
-                  <i class="bi bi-arrow-right"></i>
-                </span>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="caused">
-        <div class="title_caused">
-          <h2>Tại sao bạn nên sử dụng dịch vụ của chúng tôi?</h2>
-          <p>
-            Thương hiệu HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong lĩnh vực lưu trữ Website, nhà đăng ký tên
-            miền, email tên miền và dịch vụ Cloud Computing
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-4 info_caused_padding">
-            <div class="info_caused info_caused_II">
-              <div class="icon">
-                <img src="assets/svg/giai phap.svg" alt="#">
-              </div>
-              <h4 class="h4_caused">Giải pháp tổng thể</h4>
-              <p>
-                HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong lĩnh vực Cloud và lưu trữ website. Với hệ thống thiết
-                bị phần cứng chuyên dụng, chính hãng được đầu tư chuyên nghiệp.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-4 info_caused_padding">
-            <div class="info_caused">
-              <div class="icon">
-                <img src="assets/svg/Doi ngu.svg" alt="#">
-              </div>
-              <h4>Đội ngũ chuyên nghiệp</h4>
-              <p>
-                HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong lĩnh vực Cloud và lưu trữ website. Với hệ thống thiết
-                bị phần cứng chuyên dụng, chính hãng được đầu tư chuyên nghiệp.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-4 info_caused_padding">
-            <div class="info_caused">
-              <div class="icon">
-                <img src="assets/svg/Ho tro 247.svg" alt="#">
-              </div>
-              <h4 class="h4_caused">Hỗ trợ 24/7</h4>
-              <p>
-                HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong lĩnh vực Cloud và lưu trữ website. Với hệ thống thiết
-                bị phần cứng chuyên dụng, chính hãng được đầu tư chuyên nghiệp.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="statistics">
-        <div class="row">
-          <div class="col-3">
-            <div class="contet_statistics">
-              <div class="icon">
-                <img src="assets/svg/ngon lua.svg" alt="#">
-              </div>
-              <h1>15+</h1>
-              <p>Năm hoạt động</p>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="contet_statistics">
-              <div class="icon">
-                <img src="assets/svg/du an.svg" alt="#">
-              </div>
-              <h1>+50k</h1>
-              <p>Dự án</p>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="contet_statistics">
-              <div class="icon">
-                <img src="assets/svg/khach hang.svg" alt="#">
-              </div>
-              <h1>2000+</h1>
-              <p>Khách hàng tư vấn</p>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="contet_statistics">
-              <div class="icon">
-                <img src="assets/svg/du an dung hen.svg" alt="#">
-              </div>
-              <h1>99.9%</h1>
-              <p>Dự án đúng hẹn</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tools">
-        <div class="row">
-          <div class="col-3">
-            <div class="title_tools">
-              <h2>Công cụ miễn phí cho cộng đồng</h2>
-              <p>Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền tảng công nghệ dựa trên mã nguồn mở, chúng
-                tôi sẵn sàng chia sẻ tài nguyên và kiến thức dành cho cộng đồng.</p>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="box_tools">
-              <div class="icon">
-                <img src="assets/svg/ecom.svg" alt="#">
-              </div>
-              <h4>
-                Sàn thương mại điện tử
-              </h4>
-              <p>
-                Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền tảng công nghệ dựa trên mã nguồn mở, chúng
-                tôi sẵn sàng chia sẻ tài nguyên và kiến thức dành cho cộng đồng.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class=" update_box_tools">
-              <div class="icon">
-                <img src="assets/svg/Ma nguon.svg" alt="#">
-              </div>
-              <h4 class="width_title">
-                Cộng đồng chia sẻ mã nguồn wordpress
-              </h4>
-              <p>
-                Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền tảng công nghệ dựa trên mã nguồn mở, chúng
-                tôi sẵn sàng chia sẻ tài nguyên và kiến thức dành cho cộng đồng.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="box_tools">
-              <div class="icon">
-                <img src="assets/svg/Qr.svg" alt="#">
-              </div>
-              <h4>
-                Công cụ tạo và quản lý QR Code
-              </h4>
-              <p>
-                Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền tảng công nghệ dựa trên mã nguồn mở, chúng
-                tôi sẵn sàng chia sẻ tài nguyên và kiến thức dành cho cộng đồng.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="newspapers_slide">
-        <div class="carousel js-flickity" data-flickity-options='{ "prevNextButtons": false }'>
-          <div class="carousel-cell">
-            <div class="conten_slide">
-              <h2>Báo chí nói về chúng tôi</h2>
-              <div class="content_newspapers">
-                <div class="icon">
-                  <img src="assets/svg/danchi.svg" alt="#">
-                </div>
-                <div class="text_container">
-                  <p class="text_red">Trường thịnh, dân trí</p>
-                  <p>lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non luctus.
-                    lorem
-                    ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non lu...</p>
-                  <a href="#" style="text-decoration: none;">
-                    <button type="button" class="btn btn-danger">
-                      <span class="text">Đọc thêm</span>
-                      <span class="icon">
-                        <i class="bi bi-arrow-right"></i>
-                      </span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="conten_slide">
-              <h2>Báo chí nói về chúng tôi</h2>
-              <div class="content_newspapers">
-                <div class="icon">
-                  <img src="assets/svg/danchi.svg" alt="#">
-                </div>
-                <div class="text_container">
-                  <p class="text_red">Trường thịnh, dân trí</p>
-                  <p>lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non luctus.
-                    lorem
-                    ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non lu...</p>
-                  <a href="#" style="text-decoration: none;">
-                    <button type="button" class="btn btn-danger">
-                      <span class="text">Đọc thêm</span>
-                      <span class="icon">
-                        <i class="bi bi-arrow-right"></i>
-                      </span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="conten_slide">
-              <h2>Báo chí nói về chúng tôi</h2>
-              <div class="content_newspapers">
-                <div class="icon">
-                  <img src="assets/svg/danchi.svg" alt="#">
-                </div>
-                <div class="text_container">
-                  <p class="text_red">Trường thịnh, dân trí</p>
-                  <p>lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non luctus.
-                    lorem
-                    ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non lu...</p>
-                  <a href="#" style="text-decoration: none;">
-                    <button type="button" class="btn btn-danger">
-                      <span class="text">Đọc thêm</span>
-                      <span class="icon">
-                        <i class="bi bi-arrow-right"></i>
-                      </span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-cell">
-            <div class="conten_slide">
-              <h2>Báo chí nói về chúng tôi</h2>
-              <div class="content_newspapers">
-                <div class="icon">
-                  <img src="assets/svg/danchi.svg" alt="#">
-                </div>
-                <div class="text_container">
-                  <p class="text_red">Trường thịnh, dân trí</p>
-                  <p>lorem ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non luctus.
-                    lorem
-                    ipsum dolor sit amet consectetur adipiscing elit. aliquam tincidunt elementum sem non lu...</p>
-                  <a href="#" style="text-decoration: none;">
-                    <button type="button" class="btn btn-danger">
-                      <span class="text">Đọc thêm</span>
-                      <span class="icon">
-                        <i class="bi bi-arrow-right"></i>
-                      </span>
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="consultation">
-        <div class="group_image">
-          <div class="image1 image_common"></div>
-          <div class="image2 image_common"></div>
-        </div>
-        <div class="content_consultation">
-          <div class="title">
-            <h2>Bạn cần tư vấn thêm?</h2>
-            <p>Bạn chưa chọn được dịch vụ phù hợp? Bạn có câu hỏi về dịch vụ của chúng tôi? Chúng tôi luôn ở đây 24/7 để
-              phản hồi yêu cầu của bạn, bất kể là ngày hay đêm, dù nắng hay mưa!</p>
-          </div>
-          <div class="button_group">
             <a href="#">
-              <button type="button" class="btn btn_white">Gọi miễn phí</button>
+              <img src="assets/svg/logoweb 1.svg" alt="#" />
+            </a>
+          </p>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href=""><span>Trang chủ</span></a>
+              </li>
+              <li>
+                <a href=""><span>Dịch vụ</span></a>
+              </li>
+              <li>
+                <a href=""><span>Tin tức</span></a>
+              </li>
+              <li>
+                <a href=""><span> Tuyển dụng</span></a>
+              </li>
+              <li>
+                <a href=""><span>Hỗ trợ</span></a>
+              </li>
+              <li>
+                <a href=""><span>Liên hệ</span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="button_menu">
+            <p class="search_menu">
+              <button type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </p>
+            <a href="#">
+              <button type="button" class="btn btn-light button_white">
+                <span>
+                  <img src="assets/svg/call.svg" alt="#" />
+                </span>
+                <span class="text">1900 815 658</span>
+              </button>
             </a>
             <a href="#">
-              <button type="button" class="btn btn_red">Gửi froum</button>
+              <button type="button" class="btn btn-primary button_red">
+                <span>
+                  <img src="assets/svg/Vector.svg" alt="#" />
+                </span>
+                <span class="text">Kho giao diện</span>
+              </button>
             </a>
           </div>
         </div>
       </div>
 
-      <div class="blog">
-        <div class="news_blog">
-          <div class="container">
-            <div class="row gx-4">
-              <div class="col-6">
-                <div class="row gy-4">
-                  <div class="col-12">
-                    <div class="news_box">
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="news_box">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 news_blog_child_pading">
-                <div class="row gy-4">
-                  <div class="col-12">
-                    <div class="news_box">
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="news_box">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="header_mobile">
+        <div class="nav">
+          <a href="#"
+            ><span> <img src="assets/svg/call.svg" alt="#" /> </span
+          ></a>
 
-        <div class="form-news">
-          <h2>Tin tức từ Web89</h2>
-          <p class="text_form">
-            Kênh Blog chia sẻ của chúng tôi luôn cập nhật những thông tin hữu ích mới nhất dành cho khách hàng và cộng
-            đồng.
-          </p>
-          <p class="form_submit">
-            <span class="wpcf7-form-control-wrap" data-name="email">
-              <i class="bi bi-envelope-fill"></i>
-              <input size="40"
-                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                aria-required="true" aria-invalid="false" placeholder="Địa chỉ email của bạn" value="" type="email"
-                name="email">
+          <a href="#">
+            <span> <img src="assets/svg/logoweb 1.svg" alt="#" /> </span
+          ></a>
+
+          <a href="#">
+            <span> <img src="assets/svg/menu.svg" alt="#" /> </span
+          ></a>
+        </div>
+        <div class="search">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="bi bi-search"></i>
             </span>
-            <br>
-            <button type="submit">
-              <i class="bi bi-arrow-right"></i>
-            </button>
-          </p>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="search"
+              aria-describedby="basic-addon1"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="partners">
-        <h2>Đối tác đồng hành</h2>
-        <div class="image_group">
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-3">
-                <img src="assets/svg/partners 5.svg" alt="#">
+      <div id="content">
+        <div class="slider">
+          <div class="carousel" data-flickity='{ "autoPlay": true }'>
+            <div
+              class="carousel-cell"
+              style="background-image: url('assets/svg/imageSlide.png')"
+            ></div>
+            <div
+              class="carousel-cell"
+              style="background-image: url('assets/svg/imageSlide.png')"
+            ></div>
+            <div
+              class="carousel-cell"
+              style="background-image: url('assets/svg/imageSlide.png')"
+            ></div>
+            <div
+              class="carousel-cell"
+              style="background-image: url('assets/svg/imageSlide.png')"
+            ></div>
+          </div>
+        </div>
+
+        <div class="introduction">
+          <div class="container">
+            <div class="row g-3">
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="box-1">
+                  <a href="#">
+                    <h2>Bắt đầu Kinh doanh Online ngay hôm nay!</h2>
+                  </a>
+                  <div class="box_content">
+                    <p>
+                      Bạn muốn sở hữu 1 website để bắt đầu công việc kinh doanh
+                      online của mình nhưng không biết bắt đầu từ đâu?Hãy liên
+                      hệ ngay với HOSTVN, bạn sẽ được tư vấn miễn phí các bước
+                      để tạo 1 website đơn giản và tiết kiệm chi phí!
+                    </p>
+                    <img src="assets/svg/introduction_1.svg" alt="logo" />
+                  </div>
+                </div>
               </div>
-              <div class="col-3">
-                <img src="assets/svg/partners 6.svg" alt="#">
-              </div>
-              <div class="col-3">
-                <img src="assets/svg/partners 7.svg" alt="#">
-              </div>
-              <div class="col-3">
-                <img src="assets/svg/partners 8.svg" alt="#">
+
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="box-2">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <div class="box-2_1">
+                        <div class="box_text">
+                          <a href="#">
+                            <h4>Giải pháp website chuyên nghiệp</h4>
+                          </a>
+                          <p>
+                            Cung cấp đăng ký dịch vụ tên miền quốc tế, tên miền
+                            quốc gia, hosting website đặt tại việt nam, đặt tại
+                            nước ngoài…
+                          </p>
+                        </div>
+                        <a href="#">
+                          <button type="button">
+                            <div class="icon">
+                              <i class="bi bi-arrow-right"></i>
+                            </div>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="box-2_1">
+                        <div class="box_text">
+                          <a href="#">
+                            <h4>Giải pháp Marketing tổng thể</h4>
+                          </a>
+                          <p>
+                            Giải pháp thiết kế website bán hàng chuyên nghiệp.
+                            Web chuẩn SEO, tương thích nhiều thiết bị, bảo mật
+                            tốt, tốc độ nhanh.
+                          </p>
+                        </div>
+                        <a href="#">
+                          <button type="button">
+                            <div class="icon">
+                              <i class="bi bi-arrow-right"></i>
+                            </div>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="box-2_1">
+                        <div class="box_text">
+                          <a href="#">
+                            <h4>Giải pháp nhận diện thương hiệu</h4>
+                          </a>
+                          <p>
+                            Giải pháp Digital Maketing tổng thể gồm các chiến
+                            dịch Google, Facebook, SEO … Đưa sản phẩm của bạn
+                            tiếp cận với hàng triệu ...
+                          </p>
+                        </div>
+                        <a href="#">
+                          <button type="button">
+                            <div class="icon">
+                              <i class="bi bi-arrow-right"></i>
+                            </div>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+        <div class="solution">
+          <div class="title">
+            <h2>Hệ sinh thái các giải pháp đến từ chúng tôi</h2>
+            <p>
+              Chuyển đổi số mang đến những lợi ích cho mọi hoạt động trong doanh
+              nghiệp, từ quản lý, điều hành đến kinh doanh, nghiên cứu và phát
+              triển.
+            </p>
+          </div>
+
+          <div class="row solution_option">
+            <div class="col-12 col-md-6 col-lg-4 options">
+              <div class="icon_box">
+                <img src="assets/svg/domain.svg" alt="#" />
+              </div>
+              <h4>Đăng ký tên miền</h4>
+              <p>
+                Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi
+                tạo sau khi thanh toán.
+              </p>
+              <a href="" style="text-decoration: none">
+                <button type="button" class="btn btn-danger">
+                  <span class="text">Tìm hiểu ngay</span>
+                  <span class="icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 options">
+              <div class="icon_box">
+                <img src="assets/svg/hotsting.svg" alt="#" />
+              </div>
+              <h4>Hosting-Cloud Server</h4>
+              <p>
+                Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi
+                tạo sau khi thanh toán.
+              </p>
+              <a href="" style="text-decoration: none">
+                <button type="button" class="btn btn-danger">
+                  <span class="text">Tìm hiểu ngay</span>
+                  <span class="icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 options">
+              <div class="icon_box">
+                <img src="assets/svg/Email doanh nghiep.svg" alt="#" />
+              </div>
+              <h4>Email Doanh nghiệp</h4>
+              <p>
+                Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi
+                tạo sau khi thanh toán.
+              </p>
+              <a href="" style="text-decoration: none">
+                <button type="button" class="btn btn-danger">
+                  <span class="text">Tìm hiểu ngay</span>
+                  <span class="icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 options">
+              <div class="icon_box">
+                <img src="assets/svg/app mobile.svg" alt="#" />
+              </div>
+              <h4>App Mobile</h4>
+              <p>
+                Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi
+                tạo sau khi thanh toán.
+              </p>
+              <a href="" style="text-decoration: none">
+                <button type="button" class="btn btn-danger">
+                  <span class="text">Tìm hiểu ngay</span>
+                  <span class="icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 options">
+              <div class="icon_box">
+                <img src="assets/svg/Dao tao mtk.svg" alt="#" />
+              </div>
+              <h4>Đào tạo marketing online</h4>
+              <p>
+                Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi
+                tạo sau khi thanh toán.
+              </p>
+              <a href="" style="text-decoration: none">
+                <button type="button" class="btn btn-danger">
+                  <span class="text">Tìm hiểu ngay</span>
+                  <span class="icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 options">
+              <div class="icon_box">
+                <img src="assets/svg/nhan su.svg" alt="#" />
+              </div>
+              <h4>Cung ứng nhân sự</h4>
+              <p>
+                Hệ thống được ứng dụng công nghệ ảo hoá hiện đại, tự động khởi
+                tạo sau khi thanh toán.
+              </p>
+              <a href="" style="text-decoration: none">
+                <button type="button" class="btn btn-danger">
+                  <span class="text">Tìm hiểu ngay</span>
+                  <span class="icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="caused">
+          <div class="title_caused">
+            <h2>Tại sao bạn nên sử dụng dịch vụ của chúng tôi?</h2>
+            <p>
+              Thương hiệu HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong
+              lĩnh vực lưu trữ Website, nhà đăng ký tên miền, email tên miền và
+              dịch vụ Cloud Computing
+            </p>
+          </div>
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="info_caused info_caused_II">
+                <div class="icon">
+                  <img src="assets/svg/giai phap.svg" alt="#" />
+                </div>
+                <h4 class="h4_caused">Giải pháp tổng thể</h4>
+                <p>
+                  HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong lĩnh vực
+                  Cloud và lưu trữ website. Với hệ thống thiết bị phần cứng
+                  chuyên dụng, chính hãng được đầu tư chuyên nghiệp.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="info_caused">
+                <div class="icon">
+                  <img src="assets/svg/Doi ngu.svg" alt="#" />
+                </div>
+                <h4>Đội ngũ chuyên nghiệp</h4>
+                <p>
+                  HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong lĩnh vực
+                  Cloud và lưu trữ website. Với hệ thống thiết bị phần cứng
+                  chuyên dụng, chính hãng được đầu tư chuyên nghiệp.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="info_caused">
+                <div class="icon">
+                  <img src="assets/svg/Ho tro 247.svg" alt="#" />
+                </div>
+                <h4 class="h4_caused">Hỗ trợ 24/7</h4>
+                <p>
+                  HOSTVN đã có nhiều năm kinh nghiệm hoạt động trong lĩnh vực
+                  Cloud và lưu trữ website. Với hệ thống thiết bị phần cứng
+                  chuyên dụng, chính hãng được đầu tư chuyên nghiệp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="statistics">
+          <div class="contrainer">
+            <div class="row g-2">
+              <div class="col-12">
+                <div class="contet_statistics">
+                  <div class="icon">
+                    <img src="assets/svg/ngon lua.svg" alt="#" />
+                  </div>
+                  <h1>15+</h1>
+                  <p>Năm hoạt động</p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="contet_statistics">
+                  <div class="icon">
+                    <img src="assets/svg/du an.svg" alt="#" />
+                  </div>
+                  <h1>+50k</h1>
+                  <p>Dự án</p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="contet_statistics">
+                  <div class="icon">
+                    <img src="assets/svg/khach hang.svg" alt="#" />
+                  </div>
+                  <h1>2000+</h1>
+                  <p>Khách hàng tư vấn</p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="contet_statistics">
+                  <div class="icon">
+                    <img src="assets/svg/du an dung hen.svg" alt="#" />
+                  </div>
+                  <h1>99.9%</h1>
+                  <p>Dự án đúng hẹn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools">
+          <div class="container">
+            <div class="row g-2">
+              <div class="col-12">
+                <div class="title_tools">
+                  <h2>Công cụ miễn phí cho cộng đồng</h2>
+                  <p>
+                    Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền
+                    tảng công nghệ dựa trên mã nguồn mở, chúng tôi sẵn sàng chia
+                    sẻ tài nguyên và kiến thức dành cho cộng đồng.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="box_tools">
+                  <div class="icon">
+                    <img src="assets/svg/ecom.svg" alt="#" />
+                  </div>
+                  <h4>Sàn thương mại điện tử</h4>
+                  <p>
+                    Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền
+                    tảng công nghệ dựa trên mã nguồn mở, chúng tôi sẵn sàng chia
+                    sẻ tài nguyên và kiến thức dành cho cộng đồng.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="box_tools">
+                  <div class="icon">
+                    <img src="assets/svg/Ma nguon.svg" alt="#" />
+                  </div>
+                  <h4 class="width_title">
+                    Cộng đồng chia sẻ mã nguồn wordpress
+                  </h4>
+                  <p>
+                    Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền
+                    tảng công nghệ dựa trên mã nguồn mở, chúng tôi sẵn sàng chia
+                    sẻ tài nguyên và kiến thức dành cho cộng đồng.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="box_tools">
+                  <div class="icon">
+                    <img src="assets/svg/Qr.svg" alt="#" />
+                  </div>
+                  <h4>Công cụ tạo và quản lý QR Code</h4>
+                  <p>
+                    Là đơn vị tiên phong trong việc triển khai áp dụng nhiều nền
+                    tảng công nghệ dựa trên mã nguồn mở, chúng tôi sẵn sàng chia
+                    sẻ tài nguyên và kiến thức dành cho cộng đồng.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="newspapers_slide">
+          <h2>Báo chí nói về chúng tôi</h2>
+          <div
+            class="carousel js-flickity"
+            data-flickity-options='{ "prevNextButtons": false }'
+          >
+            <div class="carousel-cell">
+              <div class="conten_slide">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="icon">
+                          <img src="assets/svg/Group 3.svg" alt="#" />
+                        </p>
+                      </div>
+                      <div class="col-12">
+                        <div class="text_container">
+                          <p class="text_red">Trường thịnh, dân trí</p>
+                          <p>
+                            lorem ipsum dolor sit amet consectetur adipiscing
+                            elit. aliquam tincidunt elementum sem non luctus.
+                            lorem ipsum dolor sit amet consectetur adipiscing
+                            elit. aliquam tincidunt elementum sem non lu...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <a href="#">
+                          <button type="button" class="btn btn-danger">
+                            <span class="text">Đọc thêm</span>
+                            <span class="icon">
+                              <i class="bi bi-arrow-right"></i>
+                            </span>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="consultation">
+          <div class="group_image">
+            <div class="image1 image_common"></div>
+            <div class="image2 image_common"></div>
+          </div>
+          <div class="content_consultation">
+            <div class="title">
+              <h2>Bạn cần tư vấn thêm?</h2>
+              <p>
+                Bạn chưa chọn được dịch vụ phù hợp? Bạn có câu hỏi về dịch vụ
+                của chúng tôi? Chúng tôi luôn ở đây 24/7 để phản hồi yêu cầu của
+                bạn, bất kể là ngày hay đêm, dù nắng hay mưa!
+              </p>
+            </div>
+            <div class="button_group">
+              <a href="#">
+                <button type="button" class="btn btn_white">
+                  Gọi miễn phí
+                </button>
+              </a>
+              <a href="#">
+                <button type="button" class="btn btn_red">Gửi froum</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog">
+          <div class="news_blog">
+            <div class="container">
+              <div class="row gx-4">
+                <div class="col-6">
+                  <div class="row gy-4">
+                    <div class="col-12">
+                      <div class="news_box"></div>
+                    </div>
+                    <div class="col-12">
+                      <div class="news_box"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 news_blog_child_pading">
+                  <div class="row gy-4">
+                    <div class="col-12">
+                      <div class="news_box"></div>
+                    </div>
+                    <div class="col-12">
+                      <div class="news_box"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-news">
+            <h2>Tin tức từ Web89</h2>
+            <p class="text_form">
+              Kênh Blog chia sẻ của chúng tôi luôn cập nhật những thông tin hữu
+              ích mới nhất dành cho khách hàng và cộng đồng.
+            </p>
+            <p class="form_submit">
+              <span class="wpcf7-form-control-wrap" data-name="email">
+                <i class="bi bi-envelope-fill"></i>
+                <input
+                  size="40"
+                  class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                  aria-required="true"
+                  aria-invalid="false"
+                  placeholder="Địa chỉ email của bạn"
+                  value=""
+                  type="email"
+                  name="email"
+                />
+              </span>
+              <br />
+              <button type="submit">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div class="partners">
+          <h2>Đối tác đồng hành</h2>
+          <div class="image_group">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-3">
+                  <img src="assets/svg/partners 5.svg" alt="#" />
+                </div>
+                <div class="col-3">
+                  <img src="assets/svg/partners 6.svg" alt="#" />
+                </div>
+                <div class="col-3">
+                  <img src="assets/svg/partners 7.svg" alt="#" />
+                </div>
+                <div class="col-3">
+                  <img src="assets/svg/partners 8.svg" alt="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div id="footer"></div>
     </div>
 
-    <div id="footer"></div>
-  </div>
-
-  <!-- flickity -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <!-- flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -210,6 +210,30 @@ a {
     border: 1px solid #BB1F1F;
 }
 
+/* =========== */
+
+#header_mobile {
+    width: 100%;
+    padding: 8px 8px;
+}
+
+#header_mobile .nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+#header_mobile .search span {
+    background: #fff;
+}
+
+#header_mobile .search input {
+    border-left: none;
+}
+
 /* ============= */
 
 #content {
@@ -291,17 +315,12 @@ a {
 }
 
 .introduction .box-2 {
-    height: 100%;
+    width: 100%;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
 }
 
 
 .introduction .box-2_1 {
-    height: 30%;
     background: #fff;
     border-radius: 16px;
     padding: 40px;
@@ -390,6 +409,7 @@ a {
 .solution .options h4 {
     font-weight: 700;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .solution .options p {
@@ -466,6 +486,7 @@ a {
 .caused div.info_caused h4 {
     font-weight: 700;
     margin-bottom: 14px;
+    text-align: center;
 }
 
 .caused div.info_caused p {
@@ -579,12 +600,17 @@ a {
 
 .newspapers_slide {
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
+}
+
+.newspapers_slide h2 {
+    font-weight: 700;
+    text-align: center;
 }
 
 .newspapers_slide .carousel-cell {
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 /* position dots in carousel */
@@ -607,38 +633,12 @@ a {
     background: #BB1F1F;
 }
 
-.newspapers_slide .conten_slide {
-    width: 100%;
-    min-height: 300px;
-    background: #fff;
-    padding: 74px 192px;
-}
-
-.newspapers_slide .conten_slide h2 {
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-}
-
-.newspapers_slide .conten_slide .content_newspapers {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.newspapers_slide .conten_slide .content_newspapers .text_container p {
+.newspapers_slide .conten_slide .text_container p {
     width: 66rem;
     font-size: 24px;
 }
 
-.newspapers_slide .conten_slide .content_newspapers .text_container {
-    padding-left: 50px;
-}
-
-.newspapers_slide .conten_slide .content_newspapers .text_container p.text_red {
+.newspapers_slide .conten_slide p.text_red {
     color: #BB1F1F;
     font-size: 16px;
     letter-spacing: 0.5px;
