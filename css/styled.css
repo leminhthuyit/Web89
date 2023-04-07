@@ -600,7 +600,7 @@ a {
 
 .newspapers_slide {
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .newspapers_slide h2 {
@@ -610,7 +610,7 @@ a {
 
 .newspapers_slide .carousel-cell {
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 /* position dots in carousel */
