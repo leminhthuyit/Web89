@@ -436,6 +436,7 @@ a {
 
 #question .title_question h2 {
   font-weight: 700;
+  text-align: center;
 }
 
 #question .title_question p {
@@ -499,7 +500,7 @@ a {
   flex-direction: row;
 }
 
-.consultation .group_image .image_common {
+.consultation .group_image .image_consultation {
   min-height: 300px;
   background-size: contain;
   background-repeat: no-repeat;

@@ -27,6 +27,51 @@
     width: 18rem;
     margin-bottom: 20px;
   }
+
+  #question {
+    padding: 12px;
+  }
+
+  #question .title_question p {
+    width: 18rem;
+  }
+
+  #question .title_question {
+    margin-bottom: 8px;
+  }
+
+  #question .collapse_question p span {
+    font-size: 16px;
+  }
+
+  .consultation {
+    height: 380px;
+  }
+
+  .consultation .content_consultation {
+    padding: 12px;
+  }
+
+  .consultation .group_image div.image1 {
+    display: none;
+  }
+
+  .consultation .group_image div.image2 {
+    width: 100%;
+  }
+
+  .consultation .group_image .image_consultation {
+    background-size: cover;
+  }
+
+  .consultation .title p {
+    width: 16rem;
+    text-align: left;
+  }
+
+  .consultation .button_group button.btn_white {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -39,12 +84,162 @@
   #header_mobile {
     padding: 8px 24px;
   }
+
+  #sale .title_sale p {
+    width: 34rem;
+  }
+
+  #sale .block_package {
+    padding: 24px;
+  }
+
+  .caused {
+    padding: 28px;
+  }
+
+  .caused .title_caused h2 {
+    width: 26rem;
+  }
+
+  .caused .title_caused p {
+    width: 32rem;
+  }
+
+  .consultation .title h2 {
+    text-align: left;
+  }
+
+  .consultation .title p {
+    width: 30rem;
+    text-align: left;
+  }
+
+  .consultation .content_consultation .button_group a,
+  .consultation .content_consultation .button_group a button {
+    display: inline-block;
+    width: 100%;
+  }
+
+  #question .title_question p {
+    width: 32rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #sale .title_sale p {
+    width: 42rem;
+  }
+
+  #sale {
+    padding: 40px;
+  }
+
+  #sale .block_package {
+    padding: 46px;
+  }
+
+  .caused .title_caused p {
+    width: 40rem;
+  }
+
+  #question .title_question p {
+    width: 38rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  #sale {
+    padding: 40px 90px;
+  }
+
+  #sale .title_sale p {
+    width: 46rem;
+  }
+
+  .caused {
+    padding: 40px 90px;
+  }
+
+  #question {
+    padding: 46px;
+  }
+
+  .consultation .content_consultation {
+    padding: 60px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
+  #header {
+    display: block;
+  }
+
+  #header_mobile {
+    display: none;
+  }
+
+  #nav_menu {
+    height: 80px;
+    padding: 0 18px;
+  }
+
+  #nav_menu ul li {
+    margin: 0 8px;
+  }
+
+  #nav_menu .button_menu {
+    margin-left: 8px;
+  }
+
+  #nav_menu .button_menu a button {
+    width: 10rem;
+    padding: 8px;
+  }
+
+  #sale {
+    padding: 40px 60px;
+  }
+
+  #sale .title_sale p {
+    width: 68rem;
+  }
+
+  #sale .block_package {
+    padding: 28px;
+  }
+
+  .caused .title_caused h2 {
+    width: 34rem;
+  }
+
+  .caused .title_caused p {
+    width: 64rem;
+  }
+
+  #question .title_question p {
+    width: 60rem;
+  }
+
+  .consultation .content_consultation .button_group {
+    line-height: 8rem;
+  }
+
+  .consultation .group_image div.image1 {
+    display: block;
+    width: 40%;
+  }
+
+  .consultation .group_image div.image2 {
+    width: 60%;
+  }
+
+  .consultation .content_consultation {
+    padding: 24px;
+  }
+
+  .consultation .title p {
+    width: 40rem;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

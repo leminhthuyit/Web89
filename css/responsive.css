@@ -167,6 +167,10 @@
     width: 16rem;
   }
 
+  .consultation .button_group button.btn_white {
+    margin-right: 0px;
+  }
+
   .blog .news_blog {
     padding: 12px;
   }
