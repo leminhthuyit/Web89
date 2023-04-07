@@ -676,13 +676,13 @@ a {
 
 .consultation .group_image div.image1 {
   width: 40%;
-  background-image: url("/assets/svg/Group.svg");
+  background-image: url("../assets/svg/Group.svg");
   background-position: left;
 }
 
 .consultation .group_image div.image2 {
   width: 60%;
-  background-image: url("/assets/svg/Group\ \(1\).svg");
+  background-image: url("../assets/svg/Group\ \(1\).svg");
   background-position: right;
 }
 
