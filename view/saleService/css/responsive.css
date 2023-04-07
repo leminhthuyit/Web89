@@ -1,0 +1,51 @@
+@media only screen and (min-width: 320px) {
+  #header {
+    display: none;
+  }
+
+  #sale {
+    padding: 12px;
+  }
+
+  #sale .title_sale p {
+    width: 16rem;
+  }
+
+  #sale .block_package {
+    padding: 8px;
+  }
+
+  .caused {
+    padding: 12px;
+  }
+
+  .caused .title_caused h2 {
+    width: 16rem;
+  }
+
+  .caused .title_caused p {
+    width: 18rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 414px) {
+}
+
+@media only screen and (min-width: 576px) {
+  #header_mobile {
+    padding: 8px 24px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1440px) {
+}
